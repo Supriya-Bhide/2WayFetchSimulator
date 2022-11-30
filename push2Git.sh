@@ -1,3 +1,4 @@
+echo "your wish is my command"
 echo $1
 if [ -z "$1" ]
 then
