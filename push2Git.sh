@@ -4,7 +4,7 @@ echo $2
 if [ -z "$1" ] | [ -z "$2" ]
 then
 	echo "Enter in the following format:"
-	echo "./push2Git.sh <reponame> < message >"
+	echo "./push2Git.sh < message > <reponame>"
 	exit
 fi
 
