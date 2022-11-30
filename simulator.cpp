@@ -56,7 +56,11 @@ void Fetcher<T>::readFile(char fname[100])
         
         checkIfNumber(src);
 
-        lookupVar.insert({opcode,})
+        // ins1 = new std::map<int, bool, bool>;
+        // ins1.insert(std::tuple(1,0,0));
+        ins1->insert(std::tuple(1,0,0));
+
+        // lookupVar.insert({opcode,ins1});
     }
 }
 

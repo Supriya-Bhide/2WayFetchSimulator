@@ -47,13 +47,15 @@ template <typename T> class Fetcher {
 
   // Lookup table to store variable occurence along with instruction number, and its type (Destination | Source)
     //  opcode  var     var
-  map <string, string, string> lookupU;
+  std::map <string, string, string> lookupU;
 
   //   opcode        insNo. src     dest
-  map <string, tuple<int, string, string>> lookupIns;
+  std::map <string, tuple<int, string, string>> lookupIns;
 
   //   varName      insNo. dest?  src?
-  map <string, tuple<int, bool, bool>> lookupVar;
+  std::map <string, tuple<int, bool, bool>> lookupVar;
+
+  std::map <int, bool, bool> *ins1;
   
   //read the input code file
   void readFile(char fname[100]);
